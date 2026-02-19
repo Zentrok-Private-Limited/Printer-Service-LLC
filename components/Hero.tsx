@@ -21,11 +21,11 @@ export default function Hero() {
             <div className="relative z-10 flex items-center justify-center h-full text-center px-6">
                 <div className="text-white max-w-3xl">
                     <h2 className="text-4xl md:text-5xl font-bold">
-                        Reliable Printer Services in USA
+                        Reliable Printer Sales & Repair Services Across the USA
                     </h2>
 
                     <p className="mt-4 text-lg text-gray-200">
-                        Expert repair, rental, and toner solutions
+                        We provide high-quality printers, genuine parts, and fast professional repair services to keep your business running smoothly.
                     </p>
 
                     <div className="flex gap-4 justify-center">
