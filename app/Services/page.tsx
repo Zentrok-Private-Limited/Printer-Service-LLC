@@ -179,7 +179,7 @@ export default function ServicesPage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <p className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-10">
-            Authorized to Service & Sell
+            Brands We Service & Sell
           </p>
           <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-50 grayscale hover:grayscale-0 transition-all duration-700">
             {/* Replace with actual SVGs or Logos */}

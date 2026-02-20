@@ -70,7 +70,7 @@ export default function BrandsPage() {
       <section className="bg-slate-50 py-24 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <span className="text-blue-600 font-light uppercase tracking-widest text-sm mb-4 block">
-            Authorized Reseller
+            Reseller Of
           </span>
           <h1 className="text-xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight">
             The World's Best Brands.
@@ -113,9 +113,7 @@ export default function BrandsPage() {
                     <h2 className="text-3xl font-black text-slate-900">
                       {brand.name}
                     </h2>
-                    <span className="bg-blue-50 text-blue-600 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter">
-                      Authorized Partner
-                    </span>
+                    
                   </div>
                   <p className="text-blue-600 font-bold mb-4">{brand.series}</p>
                   <p className="text-slate-600 mb-8 leading-relaxed">

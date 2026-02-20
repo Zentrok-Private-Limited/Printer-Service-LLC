@@ -23,7 +23,7 @@ export default function AboutPage() {
             </p>
             <div className="flex flex-wrap gap-4">
               <div className="flex items-center gap-2 font-bold text-slate-800">
-                <CheckCircle2 className="text-blue-600" /> Authorized Dealer
+                <CheckCircle2 className="text-blue-600" /> Top Quality Printers
               </div>
               <div className="flex items-center gap-2 font-bold text-slate-800">
                 <CheckCircle2 className="text-blue-600" /> Certified Technicians
