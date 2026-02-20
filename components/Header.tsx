@@ -9,11 +9,10 @@ export default function Header() {
 
   const navLinks = [
     { name: "Home", href: "/" },
-    { name: "About Us", href: "/about" },
-    { name: "Services", href: "/services" },
-    { name: "Products", href: "/products" },
-    { name: "Faq", href: "/faq" },
-    { name: "Contact Us", href: "/ContactUs" },
+    { name: "About Us", href: "/About" },
+    { name: "Services", href: "/Services" },
+    { name: "Products", href: "/Product" },
+    { name: "Faq", href: "/FAQ" }
   ];
 
   return (
@@ -62,10 +61,10 @@ export default function Header() {
           <div className="hidden lg:flex items-center gap-4">
             
             <Link 
-              href="/contact" 
+              href="/ContactUs" 
               className="bg-blue-600 text-white px-6 py-2.5 rounded-full font-bold text-sm hover:bg-blue-700 transition-all shadow-md shadow-blue-200"
             >
-              Get a Quote
+              Contact Us
             </Link>
           </div>
 
