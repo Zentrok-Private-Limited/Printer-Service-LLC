@@ -60,12 +60,6 @@ export default function ContactPage() {
                 <p className="text-slate-500 mb-4">
                   Immediate assistance for urgent repairs.
                 </p>
-                <a
-                  href="tel:1800PRINTER"
-                  className="text-lg font-bold text-blue-600"
-                >
-                  +1 (800) PRINTER-LLC
-                </a>
               </div>
 
               <div className="bg-white p-8 rounded-3xl shadow-xl border border-slate-100 group hover:border-blue-500 transition-all">
@@ -79,29 +73,14 @@ export default function ContactPage() {
                   Send us your specs for a bulk quote.
                 </p>
                 <a
-                  href="mailto:support@printerservicellc.com"
+                  href="mailto:billing@printerservicellc.com"
                   className="text-lg font-bold text-blue-600"
                 >
-                  support@printerservicellc.com
+                  billing@printerservicellc.com
                 </a>
               </div>
 
-              <div className="bg-slate-900 p-8 rounded-3xl shadow-xl text-white relative overflow-hidden">
-                <div className="relative z-10">
-                  <h3 className="text-xl font-bold mb-4">Visit Us</h3>
-                  <div className="space-y-4 text-slate-300">
-                    <p className="flex items-center gap-3">
-                      <MapPin className="text-blue-500" size={18} /> Printer
-                      Service LLC 30 N GOULD ST STER, SHERIDAN WY, 82801
-                    </p>
-                    <p className="flex items-center gap-3">
-                      <Clock className="text-blue-500" size={18} /> Mon-Fri: 8am
-                      - 6pm
-                    </p>
-                  </div>
-                </div>
-                <Zap className="absolute bottom-[-20px] right-[-20px] w-32 h-32 text-white/5 rotate-12" />
-              </div>
+              
             </div>
 
             {/* Right Column: The Form */}

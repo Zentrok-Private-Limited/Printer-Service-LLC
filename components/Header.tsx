@@ -23,10 +23,7 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
           <div className="flex gap-6">
             <span className="flex items-center gap-2 hover:text-blue-400 cursor-pointer transition-colors">
-              <Phone size={14} className="text-blue-500" /> +1 (800) PRINTER-LLC
-            </span>
-            <span className="flex items-center gap-2 hover:text-blue-400 cursor-pointer transition-colors">
-              <Mail size={14} className="text-blue-500" /> support@printerservicellc.com
+              <Mail size={14} className="text-blue-500" />billing@printerservicellc.com
             </span>
           </div>
           <div className="flex items-center gap-2">

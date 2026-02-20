@@ -22,16 +22,6 @@ export default function Contact() {
             <div className="space-y-8">
               <div className="flex items-start gap-4 group">
                 <div className="p-3 bg-blue-600/20 rounded-xl group-hover:bg-blue-600 transition-colors">
-                  <Phone className="w-6 h-6 text-blue-400 group-hover:text-white" />
-                </div>
-                <div>
-                  <p className="text-sm text-slate-400 uppercase tracking-widest font-semibold">Call Support</p>
-                  <p className="text-xl font-medium">+1 (800) PRINTER-LLC</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4 group">
-                <div className="p-3 bg-blue-600/20 rounded-xl group-hover:bg-blue-600 transition-colors">
                   <Clock className="w-6 h-6 text-blue-400 group-hover:text-white" />
                 </div>
                 <div>
@@ -46,7 +36,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-slate-400 uppercase tracking-widest font-semibold">Email Us</p>
-                  <p className="text-xl font-medium">support@printerservicellc.com</p>
+                  <p className="text-xl font-medium">billing@printerservicellc.com</p>
                 </div>
               </div>
             </div>
