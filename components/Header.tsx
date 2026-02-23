@@ -93,14 +93,13 @@ export default function Header() {
               </Link>
             ))}
             <div className="mt-4 flex flex-col gap-4">
-              <Link 
-                href="tel:1800PRINTER" 
+              {/* <Link 
                 className="flex items-center justify-center gap-2 w-full py-4 bg-slate-100 rounded-xl font-bold text-slate-900"
               >
                 <Phone size={20} /> Call Now
-              </Link>
+              </Link> */}
               <Link 
-                href="/contact" 
+                href="/ContactUs" 
                 className="flex items-center justify-center gap-2 w-full py-4 bg-blue-600 rounded-xl font-bold text-white shadow-lg shadow-blue-200"
               >
                 Get a Quote
