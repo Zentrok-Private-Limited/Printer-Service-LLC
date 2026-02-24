@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from 'react';
-import { ShoppingCart, Menu, X, Phone, Mail, MapPin, ChevronRight } from 'lucide-react';
+import { MessageCircle, Menu, X, Phone, Mail, MapPin, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
   
 
@@ -103,7 +103,7 @@ export default function Header() {
               <button onClick={openChat}
                 className="flex items-center justify-center gap-2 w-full py-4 bg-slate-100 rounded-xl font-bold text-slate-900"
               >
-                <Phone size={20} /> Chat Now
+                <MessageCircle size={20} /> Chat Now
               </button>
               <Link 
                 href="/ContactUs" 
