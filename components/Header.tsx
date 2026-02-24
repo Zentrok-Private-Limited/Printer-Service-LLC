@@ -3,9 +3,16 @@
 import { useState } from 'react';
 import { ShoppingCart, Menu, X, Phone, Mail, MapPin, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
+  
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+
+  const openChat = () => {
+    if (typeof window !== "undefined" && window.jivo_api) {
+      window.jivo_api.open();
+    }
+  };
 
   const navLinks = [
     { name: "Home", href: "/" },
@@ -93,11 +100,11 @@ export default function Header() {
               </Link>
             ))}
             <div className="mt-4 flex flex-col gap-4">
-              {/* <Link 
+              <button onClick={openChat}
                 className="flex items-center justify-center gap-2 w-full py-4 bg-slate-100 rounded-xl font-bold text-slate-900"
               >
-                <Phone size={20} /> Call Now
-              </Link> */}
+                <Phone size={20} /> Chat Now
+              </button>
               <Link 
                 href="/ContactUs" 
                 className="flex items-center justify-center gap-2 w-full py-4 bg-blue-600 rounded-xl font-bold text-white shadow-lg shadow-blue-200"

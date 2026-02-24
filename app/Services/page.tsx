@@ -12,7 +12,8 @@ import {
   ChevronRight,
   Settings2,
 } from "lucide-react";
-import Contact from "@/components/Contact"; // Your fixed high-contrast contact component
+import Contact from "@/components/Contact";
+import Link from "next/link"
 
 const mainServices = [
   {
@@ -111,9 +112,9 @@ export default function ServicesPage() {
                     </li>
                   ))}
                 </ul>
-                <button className="bg-slate-900 text-white px-8 py-4 rounded-xl font-bold hover:bg-blue-600 transition-all flex items-center gap-2">
+                <Link href="/ContactUs" className="bg-slate-900 text-white px-8 py-4 w-1/2 rounded-xl font-bold hover:bg-blue-600 transition-all flex items-center gap-2">
                   Contact Us to Know More <Settings2 size={18} />
-                </button>
+                </Link>
               </div>
             </div>
           </div>

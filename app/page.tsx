@@ -27,9 +27,9 @@ export default function Home() {
             With experienced technicians, genuine parts, and customer-first service, we ensure performance you can depend on.
           </p>
 
-          <button className="px-10 py-3 border-2 border-gray-900 rounded-lg text-lg font-medium bg-gray-900 hover:text-white transition-all duration-300">
+          <Link href="/About" className="px-10 py-3 border-2 border-gray-900 rounded-lg text-lg font-medium bg-gray-900 hover:text-white transition-all duration-300">
             Learn More
-          </button>
+          </Link>
         </div>
 
         {/* Right Image Column */}

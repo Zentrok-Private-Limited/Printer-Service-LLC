@@ -3,7 +3,7 @@
 import React from "react";
 import {
   Mail,
-  Phone,
+  MessageCircle,
   MapPin,
   Send,
   Clock,
@@ -13,6 +13,12 @@ import {
 } from "lucide-react";
 
 export default function ContactPage() {
+   const openChat = () => {
+    if (typeof window !== "undefined" && window.jivo_api) {
+      window.jivo_api.open();
+    }
+  };
+
   return (
     <main className="min-h-screen bg-white">
       {/* --- HERO SECTION --- */}
@@ -52,14 +58,20 @@ export default function ContactPage() {
             <div className="lg:col-span-1 space-y-6">
               <div className="bg-white p-8 rounded-3xl shadow-xl border border-slate-100 group hover:border-blue-500 transition-all">
                 <div className="w-12 h-12 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all">
-                  <Phone size={24} />
+                  <MessageCircle size={24} />
                 </div>
                 <h3 className="text-xl font-bold text-slate-900 mb-2">
-                  Call Us
+                  Chat with Us
                 </h3>
                 <p className="text-slate-500 mb-4">
                   Immediate assistance for urgent repairs.
                 </p>
+                <button
+                  onClick={openChat}
+                  className="text-lg font-bold text-blue-600 cursor-pointer"
+                >
+                  Chat Now
+                </button>
               </div>
 
               <div className="bg-white p-8 rounded-3xl shadow-xl border border-slate-100 group hover:border-blue-500 transition-all">

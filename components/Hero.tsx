@@ -1,5 +1,12 @@
-
+"use client"
 export default function Hero() {
+
+    const openChat = () => {
+    if (typeof window !== "undefined" && window.jivo_api) {
+      window.jivo_api.open();
+    }
+  };
+
     return (
         <section className="relative h-screen w-full overflow-hidden">
             {/* Background Video */}
@@ -29,8 +36,8 @@ export default function Hero() {
                     </p>
 
                     <div className="flex gap-4 justify-center">
-                        <button className="mt-8 bg-transparent text-white border-white border rounded-xl px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 hover:text-black transition">
-                            Call Now
+                        <button onClick={openChat} className="mt-8 bg-transparent text-white border-white border rounded-xl px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 hover:text-black transition">
+                            Chat Now
                         </button>
                         <button className="mt-8 bg-transparent text-white border-white border rounded-xl px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 hover:text-black transition">
                             Get Quote
