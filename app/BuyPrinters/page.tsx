@@ -99,7 +99,7 @@ export default function BuyPrintersPage() {
             <h3 className="text-xs font-bold text-blue-600 uppercase">{product.brand}</h3>
             <h2 className="text-xl font-bold text-slate-900">{product.name}</h2>
           </div>
-          <p className="text-xl font-black text-slate-900">${product.price}</p>
+          <p className="text-xl font-black text-blue-600">${product.price}</p>
         </div>
 
         <p className="text-slate-500 text-sm mb-6">Commercial grade printer with 1-year Printer Service LLC warranty.</p>
