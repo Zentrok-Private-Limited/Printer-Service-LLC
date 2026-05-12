@@ -84,12 +84,26 @@ export default function ContactPage() {
                 <p className="text-slate-500 mb-4">
                   Send us your specs for a bulk quote.
                 </p>
+                <div className="flex flex-col">
+                  <a
+                  href="mailto:info@printerservicellc.com"
+                  className="text-lg font-bold text-blue-600"
+                >
+                  info@printerservicellc.com
+                </a>
+                <a
+                  href="mailto:contact@printerservicellc.com"
+                  className="text-lg font-bold text-blue-600"
+                >
+                  contact@printerservicellc.com
+                </a>
                 <a
                   href="mailto:billing@printerservicellc.com"
                   className="text-lg font-bold text-blue-600"
                 >
                   billing@printerservicellc.com
                 </a>
+                </div>
               </div>
 
               
