@@ -145,9 +145,9 @@ export default function PrinterSetupPage() {
           {/* Media Object Slot */}
           <div className="h-80 md:h-96 bg-white rounded-[2.5rem] overflow-hidden p-6 border border-slate-200/60 shadow-lg flex items-center justify-center">
             <img 
-              src="/setup-infographic.jpg" 
+              src="/service1.png" 
               alt="Printer Setup Instruction Diagram" 
-              className="w-full h-full object-contain"
+              className="w-full h-full object-cover"
             />
           </div>
 
