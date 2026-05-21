@@ -196,8 +196,6 @@ export default function PrinterSetupPage() {
           </p>
           <div className="inline-flex flex-wrap items-center justify-center gap-6 text-xs uppercase font-black tracking-widest bg-slate-900 px-8 py-4 rounded-xl border border-white/10 shadow-lg">
             <span className="flex items-center gap-2 text-blue-400"><Cpu size={16}/> Certified Tech Support</span>
-            <span className="text-slate-600">|</span>
-            <span className="text-emerald-400">● 24/7 Availability</span>
           </div>
         </div>
       </section>
