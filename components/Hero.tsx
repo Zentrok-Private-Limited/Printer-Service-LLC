@@ -39,9 +39,9 @@ export default function Hero() {
                         <button onClick={openChat} className="mt-8 bg-transparent text-white border-white border rounded-xl px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 hover:text-black transition">
                             Chat Now
                         </button>
-                        <button className="mt-8 bg-transparent text-white border-white border rounded-xl px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 hover:text-black transition">
-                            Get Quote
-                        </button>
+                        <a href="/Setup" className="mt-8 bg-transparent text-white border-white border rounded-xl px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 hover:text-black transition">
+                            Setup Now
+                        </a>
 
                     </div>
                 </div>

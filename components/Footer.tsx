@@ -40,21 +40,22 @@ export default function Footer() {
         <div>
           <h4 className="text-white font-bold mb-6 uppercase text-sm tracking-widest">Our Services</h4>
           <ul className="space-y-3 text-sm">
-            <li><Link href="/services/repair" className="hover:text-blue-400 transition-colors">Printer Repair</Link></li>
-            <li><Link href="/services/selling" className="hover:text-blue-400 transition-colors">Buy New Printers</Link></li>
-            <li><Link href="/services/maintenance" className="hover:text-blue-400 transition-colors">Maintenance Plans</Link></li>
-            <li><Link href="/services/onsite" className="hover:text-blue-400 transition-colors">On-Site Support</Link></li>
+            <li><Link href="/About" className="hover:text-blue-400 transition-colors">About Us</Link></li>
+            <li><Link href="/BuyPrinters" className="hover:text-blue-400 transition-colors">Buy New Printers</Link></li>
+            <li><Link href="/Services" className="hover:text-blue-400 transition-colors">Services</Link></li>
+            <li><Link href="/FAQ" className="hover:text-blue-400 transition-colors">FAQ</Link></li>
+            <li><Link href="/ContactUs" className="hover:text-blue-400 transition-colors">Request a Quote</Link></li>
           </ul>
         </div>
 
         {/* Column 3: Quick Links */}
         <div>
-          <h4 className="text-white font-bold mb-6 uppercase text-sm tracking-widest">Company</h4>
+          <h4 className="text-white font-bold mb-6 uppercase text-sm tracking-widest">Legal</h4>
           <ul className="space-y-3 text-sm">
-            <li><Link href="/About" className="hover:text-blue-400 transition-colors">About Us</Link></li>
-            <li><Link href="/Services" className="hover:text-blue-400 transition-colors">Services</Link></li>
-            <li><Link href="/FAQ" className="hover:text-blue-400 transition-colors">FAQ</Link></li>
-            <li><Link href="/ContactUs" className="hover:text-blue-400 transition-colors">Request a Quote</Link></li>
+            <li><Link href="/PrivacyPolicy" className="hover:text-blue-400 transition-colors">Privacy Policy</Link></li>
+            <li><Link href="/RefundPolicy" className="hover:text-blue-400 transition-colors">Refund and Return Policy</Link></li>
+            <li><Link href="/TermsofUse" className="hover:text-blue-400 transition-colors">Terms of Use</Link></li>
+            <li><Link href="/Disclaimer" className="hover:text-blue-400 transition-colors">Disclaimer</Link></li>
           </ul>
         </div>
 

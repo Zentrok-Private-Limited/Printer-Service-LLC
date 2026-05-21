@@ -8,12 +8,14 @@ const services = [
     description: "Expert diagnostic and repair services for all major brands. We fix hardware failures, paper jams, and connectivity issues on-site.",
     image: "/service1.png", // Replace with your collage image
     icon: <Settings className="w-6 h-6 text-blue-600" />,
+    link: "/ContactUs",
   },
   {
     title: "Printer Selling",
     description: "Premium selection of laser, inkjet, and multifunction printers tailored for home offices and large enterprise environments.",
     image: "/service2.png", // Replace with your collage image
     icon: <ShoppingCart className="w-6 h-6 text-blue-600" />,
+    link: "/BuyPrinters",
   }
 ];
 
@@ -63,10 +65,10 @@ export default function Services() {
                   {service.description}
                 </p>
                 
-                <button className="flex items-center text-blue-600 font-bold hover:text-blue-800 transition-colors group/btn">
+                <a href={service.link} className="flex items-center text-blue-600 font-bold hover:text-blue-800 transition-colors group/btn">
                   Learn More 
                   <ArrowRight className="ml-2 w-4 h-4 transform group-hover/btn:translate-x-2 transition-transform" />
-                </button>
+                </a>
               </div>
             </div>
           ))}
