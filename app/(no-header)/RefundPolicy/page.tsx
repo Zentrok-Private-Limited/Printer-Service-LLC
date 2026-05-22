@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import React from 'react';
+import React from "react";
 import {
   RefreshCcw,
   PackageX,
@@ -9,11 +9,10 @@ import {
   CreditCard,
   Gavel,
   Mail,
-} from 'lucide-react';
+} from "lucide-react";
 
 const RefundPolicy: React.FC = () => {
-
-    const openChat = () => {
+  const openChat = () => {
     if (typeof window !== "undefined" && window.jivo_api) {
       window.jivo_api.open();
     }
@@ -48,9 +47,7 @@ const RefundPolicy: React.FC = () => {
             <CheckCircle2 className="mt-1 h-6 w-6 shrink-0 text-emerald-600" />
 
             <div>
-              <h3 className="text-lg font-bold text-emerald-900">
-                Overview
-              </h3>
+              <h3 className="text-lg font-bold text-emerald-900">Overview</h3>
 
               <p className="text-sm leading-relaxed text-emerald-800/80">
                 At printerservicellc.com, customer satisfaction is our top
@@ -119,8 +116,13 @@ const RefundPolicy: React.FC = () => {
                     <ul className="list-inside list-disc">
                       <li className="pb-2">
                         You may cancel your order before it is shipped by
-                        contacting our support team at
-                        info@printerdriverssupport.com or via live chat support.
+                        contacting our support team at :
+                        <br />
+                        info@printerservicellc.com 
+                        <br />
+                        contact@printerservicellc.com
+                        <br />
+                        billing@printerservicellc.com or via live chat support.
                       </li>
 
                       <li>
@@ -210,13 +212,9 @@ const RefundPolicy: React.FC = () => {
                 </p>
 
                 <ul className="list-inside list-disc text-slate-500">
-                  <li>
-                    Products damaged due to misuse or improper handling
-                  </li>
+                  <li>Products damaged due to misuse or improper handling</li>
 
-                  <li>
-                    Software products, downloaded drivers, and licenses.
-                  </li>
+                  <li>Software products, downloaded drivers, and licenses.</li>
 
                   <li>Ink/toner cartridges once opened or used</li>
 
@@ -325,9 +323,7 @@ const RefundPolicy: React.FC = () => {
                     <Gavel size={22} />
                   </div>
 
-                  <h2 className="text-2xl font-bold text-slate-900">
-                    Contact
-                  </h2>
+                  <h2 className="text-2xl font-bold text-slate-900">Contact</h2>
                 </div>
 
                 <div className="grid grid-cols-1 gap-6 md:grid-cols-2">

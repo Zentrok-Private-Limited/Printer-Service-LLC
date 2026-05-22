@@ -1,14 +1,12 @@
 "use client";
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { 
   Download, 
   Monitor, 
   Terminal, 
   CheckCircle, 
-  AlertTriangle, 
-  Search, 
-  ArrowRight,
+  AlertTriangle,
   RefreshCw,
   Cpu,
   Wifi
