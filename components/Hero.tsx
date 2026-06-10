@@ -39,8 +39,8 @@ export default function Hero() {
                         <button onClick={openChat} className="mt-8 bg-transparent text-white border-white border rounded-xl px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 hover:text-black transition">
                             Chat Now
                         </button>
-                        <a href="/Setup" className="mt-8 bg-transparent text-white border-white border rounded-xl px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 hover:text-black transition">
-                            Setup Now
+                        <a href="/BuyPrinters" className="mt-8 bg-transparent text-white border-white border rounded-xl px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 hover:text-black transition">
+                            Shop Now
                         </a>
 
                     </div>

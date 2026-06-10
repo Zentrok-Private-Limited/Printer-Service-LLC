@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { CartProvider } from "@/context/CartContext";
 import Script from "next/script";
 
 const geistSans = Geist({
@@ -32,7 +33,9 @@ export default function RootLayout({
           src="//code.jivosite.com/widget/wxQO52v46T"
           strategy="afterInteractive"
         />
-        {children}
+        <CartProvider>
+          {children}
+        </CartProvider>
       </body>
     </html>
   );
