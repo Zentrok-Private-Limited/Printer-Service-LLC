@@ -47,7 +47,7 @@ export default function DedicatedCartPage() {
               Looks like you haven't added any printers to your cart yet.
             </p>
             <Link 
-              href="/buy-printers"
+              href="/BuyPrinters"
               className="bg-blue-600 hover:bg-slate-900 text-white font-black px-8 py-4 rounded-xl text-xs uppercase tracking-widest shadow-lg shadow-blue-100 transition inline-block"
             >
               Browse Printers
@@ -122,7 +122,7 @@ export default function DedicatedCartPage() {
             </div>
 
             {/* RIGHT COLUMN: PRICING LOGISTICS & LEDGER */}
-            <div className="bg-white rounded-[2rem] p-6 md:p-8 border border-slate-200/60 shadow-xl shadow-slate-100 space-y-6 lg:sticky lg:top-24">
+            <div className="bg-white rounded-4xl p-6 md:p-8 border border-slate-200/60 shadow-xl shadow-slate-100 space-y-6 lg:sticky lg:top-24">
               <h2 className="text-xl font-bold text-slate-900 pb-4 border-b border-slate-100">
                 Order Summary
               </h2>

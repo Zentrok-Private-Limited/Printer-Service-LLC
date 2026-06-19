@@ -10,31 +10,13 @@ import {
   ShoppingCart,
 } from "lucide-react";
 import Link from "next/link";
+import { useCart } from "@/context/CartContext";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
-  const [cartCount, setCartCount] = useState(0);
+  const { cart } = useCart();
 
-  useEffect(() => {
-    const updateCartCount = () => {
-      const cart = JSON.parse(localStorage.getItem("cart") || "[]");
-
-      const totalItems = cart.reduce(
-        (total: number, item: any) => total + (item.qty || 1),
-        0,
-      );
-
-      setCartCount(totalItems);
-    };
-
-    updateCartCount();
-
-    window.addEventListener("storage", updateCartCount);
-
-    return () => {
-      window.removeEventListener("storage", updateCartCount);
-    };
-  }, []);
+  const cartCount = cart.reduce((total, item) => total + item.quantity, 0);
 
   const openChat = () => {
     if (typeof window !== "undefined" && window.jivo_api) {
@@ -71,7 +53,7 @@ export default function Header() {
 
       {/* Main Nav */}
       <div className="bg-white border-b border-slate-100">
-        <div className="max-w-7xl mx-auto px-4 flex items-center justify-between h-20">
+        <div className=" mx-auto px-8 flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex flex-col group">
             <span className="text-xl md:text-2xl font-black text-slate-900 tracking-tighter group-hover:text-blue-600 transition-colors">
@@ -80,8 +62,8 @@ export default function Header() {
                 LLC
               </span>
             </span>
-            <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-slate-500">
-              Sales & Expert Repair
+            <span className="text-[10px] uppercase tracking-normal font-bold text-slate-500">
+              Printer Support • Technical Assistance • IP Network Configuration
             </span>
           </Link>
 
@@ -91,7 +73,7 @@ export default function Header() {
               <Link
                 key={link.name}
                 href={link.href}
-                className="hover:text-blue-600 transition-colors relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-blue-600 after:transition-all hover:after:w-full"
+                className="hover:text-blue-600 pb-2 transition-colors relative after:content-[''] after:absolute after:bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 after:transition-all hover:after:w-full"
               >
                 {link.name}
               </Link>
@@ -107,7 +89,7 @@ export default function Header() {
               <ShoppingCart size={22} />
 
               {cartCount > 0 && (
-                <span className="absolute -top-2 -right-2 bg-blue-600 text-white text-[11px] font-bold min-w-[20px] h-5 px-1 rounded-full flex items-center justify-center">
+                <span className="absolute -top-2 -right-2 bg-blue-600 text-white text-[11px] font-bold min-w-5 h-5 px-1 rounded-full flex items-center justify-center">
                   {cartCount}
                 </span>
               )}

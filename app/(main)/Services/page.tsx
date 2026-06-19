@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import Contact from "@/components/Contact";
 import Link from "next/link"
+import Service2 from "@/components/Service2";
 
 const mainServices = [
   {
@@ -120,6 +121,8 @@ export default function ServicesPage() {
           </div>
         ))}
       </section>
+
+      <Service2/>
 
       {/* --- THE REPAIR PROCESS (Timeline UI) --- */}
       <section className="py-24 bg-slate-900 text-white">

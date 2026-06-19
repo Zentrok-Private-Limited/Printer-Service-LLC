@@ -6,6 +6,9 @@ import Contact from "@/components/Contact";
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import WhoWeHelp from "@/components/WhoWeHelp";
+import WhyChooseUs from "@/components/WhyUs";
+import CommonIssues from "@/components/CommonIssues";
 
 
 export default function Home() {
@@ -23,8 +26,7 @@ export default function Home() {
           </h1>
           
           <p className="text-sm lg:text-lg text-gray-500 max-w-md leading-relaxed">
-            We are a trusted provider of high-quality printers and professional repair services across the USA. From helping businesses choose the right printing solutions to delivering fast and reliable repairs, our mission is simple — keep your printing operations running smoothly and efficiently
-            With experienced technicians, genuine parts, and customer-first service, we ensure performance you can depend on.
+            Printer Service LLC provides expert printer support, troubleshooting, installation, and IP network configuration services for residential customers, home offices, and businesses across the United States. Whether you need help setting up a new printer, resolving connectivity issues, or configuring your network, our technicians are ready to assist.
           </p>
 
           <Link href="/About" className="px-10 py-3 border-2 border-gray-900 text-white rounded-lg text-lg font-medium bg-gray-900 hover:text-white transition-all duration-300">
@@ -71,6 +73,9 @@ export default function Home() {
         
       </main>
       <Services />
+      <WhoWeHelp/>
+      <WhyChooseUs/>
+      <CommonIssues/>
       <Contact />
       
     </main>

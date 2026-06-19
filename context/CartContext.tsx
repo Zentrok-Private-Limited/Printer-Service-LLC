@@ -84,15 +84,16 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
 
   // Update Specific Quantity Delta
   const updateQty = (id: number, delta: number) => {
-    setCart((prevCart) =>
-      prevCart
-        .map((item) =>
-          item.id === id
-            ? { ...item, quantity: Math.max(1, item.quantity + delta) }
-            : item
-        )
-    );
-  };
+  setCart((prevCart) =>
+    prevCart
+      .map((item) =>
+        item.id === id
+          ? { ...item, quantity: item.quantity + delta }
+          : item
+      )
+      .filter((item) => item.quantity > 0)
+  );
+};
 
   // Remove Single Entry
   const removeItem = (id: number) => {
