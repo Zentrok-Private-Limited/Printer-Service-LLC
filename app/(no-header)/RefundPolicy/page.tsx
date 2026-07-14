@@ -220,6 +220,51 @@ const RefundPolicy: React.FC = () => {
 
                   <li>Customized or special-order items</li>
                 </ul>
+
+                <p className="mt-4 mb-1 block text-lg font-bold text-slate-700">
+                  Non-Refundable Services
+                </p>
+
+                <p className="font-bold text-slate-500">
+                  Due to the nature of digital and remote technical services, all services rendered are final and non-refundable once work has commenced. This includes, but is not limited to:
+                </p>
+
+                <ul className="list-inside list-disc text-slate-500">
+                  <li>Remote printer troubleshooting and diagnostics</li>
+
+                  <li>Printer setup and configuration</li>
+
+                  <li>Network and wireless printer configuration</li>
+
+                  <li>Operating system and device connectivity support</li>
+
+                  <li>Technical consultation and support sessions</li>
+                </ul>
+                <p className="text-slate-500 font-semibold mt-2">Once a technician has begun diagnosing, troubleshooting, configuring, or providing technical assistance, the service is considered rendered and is not eligible for a refund, regardless of the outcome, change of mind, or if the service is no longer required.</p>
+              
+                <p className="mt-4 mb-1 block text-lg font-bold text-slate-700">
+                  Cancellation
+                </p>
+
+                <p className=" text-slate-500">
+                  If you wish to cancel your service before any work has started, please contact us immediately. Cancellation requests received before service begins may be reviewed at our sole discretion.
+                </p>
+
+                <p className="mt-4 mb-1 block text-lg font-bold text-slate-700">
+                  Chargebacks
+                </p>
+
+                <p className=" text-slate-500">
+                  If you believe there has been an error with your payment, please contact Printer Service LLC before initiating a dispute or chargeback. We will make every reasonable effort to resolve billing concerns promptly. Chargebacks filed for services that have already been provided may be contested with supporting service records and documentation.
+                </p>
+
+                <p className="mt-4 mb-1 block text-lg font-bold text-slate-700">
+                  Contact
+                </p>
+
+                <p className=" text-slate-500">
+                  For questions regarding this Refund Policy or your purchase, please contact our customer support team before purchasing any services.
+                </p>
               </section>
 
               {/* Refund Method */}
